@@ -7,7 +7,7 @@ print(frase[:5])# não indica o inicio
 print(frase[7:])# não indica o fim
 
 # ANÁLISE DE STRING
-print(len(frase))# mostra a quantidade de caracteres
+print(len(frase))# #Lê a quantidade de posições
 print(frase.count('o')) # conta quantos "o" possuem na cadeia de caracteres
 print(frase.find('deo'))# encontra a posição inicial do "deo"
 print(frase.replace('Python', 'Android')) # substitui a palavra "Python" por "Android"
@@ -17,6 +17,7 @@ print(frase.capitalize())# transforma a primeira letra em maiúscula e as outras
 print(frase.title())# Análisa quantas palavras existem
 print(frase.split())# Divide os espaços e gera uma lista com todas as palavras em um cadeia de caracteres
 print('-'.join(frase))# Juntas os espaços e gera uma lista com todas as palavras em um cadeia de caracteres
+
 
 
 frase2="   Aprenda Python  "
@@ -61,7 +62,11 @@ print("O seu nome tem Fernandes? {}" .format('FERNANDES' in nome.upper())) #Oper
 #Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”, em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
 frase=input("Digite uma frase: ").strip() .upper()
 print("A letra 'A' aparece {} na frase" .format(frase.count('A')))
-
 print("O primeiro A fica na posição {}".format(frase.find('A')+1))
-
 print("A última letra A pareceu na posição {}" .format(frase.rfind('A')+1)) #rfind (comece a procurar pela direita)
+
+#Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o primeiro e o último nome separadamente.
+name=input("Digite seu nome completo: ")
+name1=name.split()
+print("O seu primeiro nome é {}" .format(name1[0]))
+print("O seu último nome é {}" .format(name1[len(name1)-1])) #len --> lê a quantidade de posições --> -1 pq contamos o 0
