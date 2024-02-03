@@ -16,13 +16,34 @@ print(frase.lower())# transforma a frase toda em minúscula
 print(frase.capitalize())# transforma a primeira letra em maiúscula e as outras em minúscula
 print(frase.title())# Análisa quantas palavras existem
 print(frase.split())# Divide os espaços e gera uma lista com todas as palavras em um cadeia de caracteres
-print('-'.join(frase))#
+print('-'.join(frase))# Juntas os espaços e gera uma lista com todas as palavras em um cadeia de caracteres
 
 
 frase2="   Aprenda Python  "
 print(frase2)
 print(frase2.strip())# remove espaços inúteis
-print(frase2.rstrip())# remove soemente espaços inúteis da direita
+print(frase2.rstrip())# remove somente espaços inúteis da direita
 print(frase2.lstrip())# remove soemente espaços inúteis da esquerda
 
 print("""Welcome! Are you completely new to programming? Learn about why and how to get started with Python. Fortunately, an experienced programmer in any programming language, whatever it may be, can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!""")
+
+#Nome com todas as letras maiúsculas
+nome=input("Escreva seu nome: ")
+print("O seu nome escrito com todas as letras maiúsculas é: "+ nome.upper())
+
+#Nome com todas a letras minúsculas
+print("O seu nome escrito com todas as letras minúsculas é: "+ nome.lower())
+
+#Quantas letras tem o nome sem contar os espaços
+print("O seu nome tem {} letras" .format(len(nome.replace(' ', ''))))
+
+#Quantas letras tem o primeiro nome
+nome1=nome.split()
+print("A quantidade de letras do seu primeiro nome é: {}" .format(len(nome1[0])))
+
+
+#Soluções do professor
+print("O seu nome escrito com todas as letras maiúsculas é {} ".format(nome.upper()))
+print("O seu nome escrito com todas as letras minúsculas é: {}".format(nome.lower()))
+print("Seu nome tem ao todo {} letras" .format(len(nome)-nome.count(" ")))
+print("Seu primeiro nome tem {} letras" .format(nome.find(" ")))
