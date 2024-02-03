@@ -47,3 +47,21 @@ print("O seu nome escrito com todas as letras maiúsculas é {} ".format(nome.up
 print("O seu nome escrito com todas as letras minúsculas é: {}".format(nome.lower()))
 print("Seu nome tem ao todo {} letras" .format(len(nome)-nome.count(" ")))
 print("Seu primeiro nome tem {} letras" .format(nome.find(" ")))
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#Devolvendo True or False para uma palavra chave
+cidade=input("Qual a cidade que vc nasceu? ").strip()
+print(cidade[:5].upper() == 'SANTO')
+
+
+#Crie um programa que leia o nome de uma pessoa e diga se ela tem “FERNANDES” no nome.
+nome=input("Digite o seu nome: ").strip()
+print("O seu nome tem Fernandes? {}" .format('FERNANDES' in nome.upper())) #Operador "in", usado para verificar a existência de um valor em uma lista
+
+#Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”, em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
+frase=input("Digite uma frase: ").strip() .upper()
+print("A letra 'A' aparece {} na frase" .format(frase.count('A')))
+
+print("O primeiro A fica na posição {}".format(frase.find('A')+1))
+
+print("A última letra A pareceu na posição {}" .format(frase.rfind('A')+1)) #rfind (comece a procurar pela direita)
